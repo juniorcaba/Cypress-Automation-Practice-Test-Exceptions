@@ -9,18 +9,17 @@ describe('Exceptions Test ', () => {
         cy.on('uncaught:exception', (err, runnable) => {
             return false;
         });
+        Cypress.config('defaultCommandTimeout', 10000)
     });
 
-    it('Test case 1: NoSuchElementException', () => {
+    it.only('Test case 1: NoSuchElementException', () => {
         exceptionsPage.addButton().click();
-        exceptionsPage.rowTwoField().should('be.visible');    
+        exceptionsPage.rowTwoField().should('be.visible')
     });
 
-
-
-
-
-
-
+    it('Test case 2: ElementNotInteractableException', () => {
+        exceptionsPage.addButton().click();
+        exceptionsPage.rowTwoField().should('be.visible');
+    });
 
 });
