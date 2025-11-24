@@ -21,10 +21,10 @@ describe('Exceptions Test ', () => {
     it('Test case 2: ElementNotInteractableException', () => {
         exceptionsPage.addButton().click();
         exceptionsPage.rowTwoField().should('be.visible');
-        exceptionsPage.rowTwoInput().type("Ice cream");
+        exceptionsPage.rowTwoInput().type(data.newRow2);
         exceptionsPage.saveButtonRow2().should('be.visible');
         exceptionsPage.saveButtonRow2().click();
-        exceptionsPage.rowTwoInput().should('have.value', 'Ice cream')
+        exceptionsPage.rowTwoInput().should('have.value', data.newRow2)
     });
 
     it('Test case 3: InvalidElementStateException', () => {
