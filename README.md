@@ -7,7 +7,7 @@ Automated end-to-end tests for handling common web automation exceptions using C
 
 🔗 **Application Under Test**: [Practice Test Automation - Exceptions](https://practicetestautomation.com/practice-test-exceptions/)
 
-## 🛠️ Project Technologies
+## Project Technologies
 
 | Technology  | Purpose |
 |------------ |----------------|
